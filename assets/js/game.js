@@ -25,6 +25,7 @@ easyBtn.addEventListener('click', function(){
 	pickedColor = pickColor();
 	colorDisplay.textContent = pickedColor;
 	numSquares = 3;
+	messageDisplay.textContent = "";
 	
 	for (var i = 0; i < squares.length; i++){
 		if(colors[i]){
@@ -42,6 +43,7 @@ hardBtn.addEventListener('click', function(){
 	pickedColor = pickColor();
 	colorDisplay.textContent = pickedColor;
 	numSquares = 6;
+	messageDisplay.textContent = "";
 	
 	for (var i = 0; i < squares.length; i++){
 		squares[i].style.background = colors[i];
@@ -55,7 +57,7 @@ resetButton.addEventListener('click', function() {
 	
 	pickedColor = pickColor();
 	
-	firstOne.style.backgroundColor = "#232323";
+	firstOne.style.backgroundColor = "steelblue";
 	
 	colorDisplay.textContent = pickedColor;
 	
